@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Our Membership is almost here</h1>
+    <p>Information and connections that help you execute and scale your idea or business. Stay informed about our launch And become our first members.</p>
+    
+    <!--form action="api/handle-wait-user.php" method="POST">-->
+    <form action="../v0.1/api/handle_waiting_user.php" method="POST">
+        <input type="hidden" name="action" value="membership">
+        <label for="full_name">Full Name:</label>
+        <input type="text" name="full_name" id="full_name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <input type="submit" value="Join the waitlist">
+    </form>
+</body>
+</html>
