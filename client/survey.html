@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey</title>
+</head>
+<body>
+    <h1>Survey</h1>
+    <!--<form action="api/handle-survey.php" method="POST">-->
+    <form action="../v0.1/api/handle_survey.php" method="POST">
+        <input type="hidden" name="action" value="survey">
+        <label for="question1">Question 1:</label>
+        <input type="text" name="question1" id="question1" required>
+        <br>
+        <label for="question2">Question 2:</label>
+        <input type="text" name="question2" id="question2" required>
+        <br>
+        <label for="question3">Question 3:</label>
+        <input type="text" name="question3" id="question3" required>
+        <br>
+        <label for="question4">Question 4:</label>
+        <input type="text" name="question4" id="question4" required>
+        <br>
+        <label for="question5">Question 5:</label>
+        <input type="text" name="question5" id="question5" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
