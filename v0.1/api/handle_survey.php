@@ -38,7 +38,7 @@ $result = mysqli_query($connection, $query);
     http_response_code(405);
 }
 
-// Set the appropriate headers
+// Set the appropriate headers.
 header('Content-Type: application/json');
 
 // Return the API response as JSON
